@@ -1,3 +1,6 @@
 FROM nginx:latest
 
-RUN apt upgrade && apt update
+COPY html /usr/share/nginx/html
+
+RUN  mkdir /usr/share/nginx/html/movie && chown nobody /usr/share/nginx/html/movie
+COPY movie /usr/share/nginx/html/movie
