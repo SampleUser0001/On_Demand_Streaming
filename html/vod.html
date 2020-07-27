@@ -11,6 +11,9 @@
     <p> Video On Demand </p>
     <video id="video" class="video-js vjs-default-skin" width="640" height="480" controls>
     <script type="text/javascript">
+        // 右クリック禁止
+        document.oncontextmenu = function () {return false;}
+    
         // 変換した動画ファイルを指定します。
         var source = '/movie/Mountain.m3u8';
         var ua = navigator.userAgent;
