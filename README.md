@@ -9,7 +9,7 @@ docker-compose up --build
 
 ## URL
 
-http://localhost:8080
+http://localhost
 
 ## 備考
 
