@@ -7,3 +7,4 @@ nginx:
     volumes:
         - ./html:/usr/share/nginx/html
         - ./movie:/usr/share/nginx/html/movie
+        - ./key/video.key:/usr/share/nginx/html/movie/video.key
